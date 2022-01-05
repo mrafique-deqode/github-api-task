@@ -58,7 +58,7 @@ docker-compose up
 ```
 
 ## Endpoints
-### Get user details
+### Get user repositories
 
 ```http
 
@@ -70,7 +70,9 @@ GET /api/github/view1?handle={mrafique-deqode}
 | :-------- | :------- | :------------------------------- |
 | `user` | `string` | **Required**. Github user handle |
 
-### Get user repositories
+![Screenshot for the above endpoint](https://user-images.githubusercontent.com/92288952/148415076-d48634b0-b956-4c86-a1f5-710e3a425b68.png)
+
+### Get user details
 
 ```http
 
@@ -82,7 +84,6 @@ GET /api/github/view2?handle={mrafique-deqode}
 | :-------- | :------- | :------------------------------------------ |
 | `user` | `string` | **Required**. Github username to fetch repo |
 
-![Screenshot for the above endpoint](https://user-images.githubusercontent.com/92288952/148415076-d48634b0-b956-4c86-a1f5-710e3a425b68.png)
 
 ## Improvements
 
