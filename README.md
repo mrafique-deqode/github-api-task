@@ -47,11 +47,7 @@ In this project we have used following dependencies.
 
 
 ## Installation
-Install PostgreSQL on system if not there
-
-Change the configuration in db.config.js according to your PG Setup
-
-After completing the above process, run the below command to start the application
+To start the application run the below command
 
 ```bash
 docker-compose up
