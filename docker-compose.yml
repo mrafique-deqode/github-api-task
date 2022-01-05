@@ -1,0 +1,24 @@
+version: '3.3'
+
+services:
+  database:
+    image: "postgres" # using latest official postgres version
+    env_file:
+      - ./backend/.env # configure postgres
+  backend:
+    env_file:
+        "./backend/.env"
+    build:
+      context: ./backend
+      dockerfile: ./dockerfile
+    image: "mhmdrfq/backend-image"
+    ports:
+      - "8080:8080"
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ./dockerfile
+    image: "mhmdrfq/frontend-image"
+    ports:
+      - "8081:8081"
+    
